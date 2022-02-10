@@ -1,0 +1,40 @@
+.weare{
+    margin: 40px 0;
+
+    .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 32px;
+        color: var(--white);
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    &__description {
+        margin-top: 30px;
+        display: block;
+    }
+
+    &__box {
+        width: 100%;
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &--item {
+            background: var(--white);
+            width: 160px;
+            height: 160px;
+            border: 2px solid var(--yellow);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
