@@ -1,18 +1,34 @@
-import React from 'react'
-import { AiOutlineWhatsApp } from "react-icons/ai";
+import React, { useState } from 'react'
+import { AiOutlineWhatsApp, AiOutlineMenu } from "react-icons/ai";
 
 import './styles.scss'
 
 
 export function Menu() {
+    const [headerChange, setHeaderChange] = useState(false);
+    const [navbarChange, setNavbarChange] = useState(false);
+
+    function handleOpenMenu() {
+        setHeaderChange(!headerChange) 
+        setNavbarChange(!navbarChange)
+
+        const hash = window.location.hash
+    }
+
     return (
-        <header id='homescroll'>
+        <header 
+            id='homescroll' 
+            style={{ height: `${headerChange ? '100%' : ''}` }}
+        >
             <div className="container">
                 <h1 className="logo">
                     ALE
                     <span>Terraplanagem</span>
                 </h1>
-                <nav className='menu'>
+                <nav 
+                    className='menu'
+                    style={{ display: `${navbarChange ? 'block' : ''}` }}
+                >
                     <ul className='menu__list'>
                         <li className='menu__option'>
                             <a className='menu__option-link' href="#terraplanagemscroll">Terraplanagem</a>
@@ -31,6 +47,9 @@ export function Menu() {
                 >
                     <AiOutlineWhatsApp fontSize={25} /> +55 11 94831-1633
                 </a>
+                <button className="menu__mobile" onClick={handleOpenMenu}>
+                    <AiOutlineMenu fontSize={30} />
+                </button>
             </div>
         </header>
     )
