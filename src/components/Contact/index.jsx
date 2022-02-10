@@ -3,7 +3,6 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 
 import './styles.scss'
 
-
 export function Contact() {
     return (
         <section className='contact' id='contactscroll'>
