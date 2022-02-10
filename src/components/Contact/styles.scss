@@ -5,6 +5,10 @@
     justify-content: center;
     background-position: center;
 
+    @media(max-width: 549px) {
+        margin: 20px 0 0;
+    }
+
     .mask {
         background-color: rgb(4 4 4 / 43%);
         width: 100%;
@@ -15,6 +19,34 @@
         width: 100%;
         max-width: 1100px;
         margin: 0 auto;
+
+        @media(max-width: 1279px) {
+            max-width: 910px;
+        }
+
+        @media(max-width: 1023px) {
+            max-width: 720px;
+        }
+
+        @media(max-width: 767px) {
+            max-width: 650px;
+        }
+
+        @media(max-width: 549px) {
+            max-width: 480px;
+        }
+
+        @media(max-width: 450px) {
+            max-width: 400px;
+        }
+
+        @media(max-width: 389px) {
+            max-width: 360px;
+        }
+
+        @media(max-width: 320px) {
+            max-width: 300px;
+        }
     }
 
     &__title {
@@ -22,6 +54,10 @@
         color: var(--white);
         text-decoration: underline;
         text-align: center;
+
+        @media(max-width: 767px) {
+            font-size: 24px;
+        }
     }
 
     &__description {
@@ -29,6 +65,14 @@
         margin-top: 30px;
         display: block;
         text-align: center;
+
+        @media(max-width: 767px) {
+            font-size: 20px;
+        }
+
+        @media(max-width: 549px) {
+            font-size: 16px;
+        }
     }
 
     &__box {
@@ -40,14 +84,30 @@
         flex-direction: column;
         text-align: center;
 
+        @media(max-width: 549px) {
+            margin: 15px 0;
+        }
+
         svg {
             margin-bottom: 20px;
+
+            @media(max-width: 549px) {
+                margin-bottom: 14px;
+            }
         }
 
         span {
             display: block;
             font-size: 24px;
             padding-bottom: 20px;
+
+            @media(max-width: 767px) {
+                font-size: 20px;
+            }
+
+            @media(max-width: 549px) {
+                font-size: 16px;
+            }
         }
 
         a {
@@ -60,6 +120,14 @@
 
             &:hover {
                 background: #297a29;
+            }
+
+            @media(max-width: 767px) {
+                font-size: 20px;
+            }
+
+            @media(max-width: 549px) {
+                font-size: 16px;
             }
         }
     }
