@@ -11,8 +11,6 @@ export function Menu() {
     function handleOpenMenu() {
         setHeaderChange(!headerChange) 
         setNavbarChange(!navbarChange)
-
-        const hash = window.location.hash
     }
 
     return (
