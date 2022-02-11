@@ -1,0 +1,44 @@
+{
+  "header": {
+    "menuLinks": [
+      {
+        "path": "#terraplanagemscroll",
+        "title": "Terraplanagem"
+      },
+      {
+        "path": "#wearescroll",
+        "title": "Quem somos"
+      },
+      {
+        "path": "#contactscroll",
+        "title": "Contato"
+      }
+    ],
+    "logoTitle": {
+      "title": "ALE",
+      "subtitle": "Terraplanagem"
+    },
+    "whatsData": {
+      "url": "https://api.whatsapp.com/send?phone=5511948311633&text=Ol%C3%A1%20Ale%20Terraplanagem%2C%20vi%20seu%20site%20e%20gostaria%20de%20ter%20maiores%20informa%C3%A7%C3%B5es.",
+      "number": "+55 11 94831-1633"
+    }
+  },
+  "banner": {
+    "title": "Terraplanagem",
+    "paragraph": "Com uma equipe especializada, frota adequada para atender todas as adequações específica para deixar seu terreno pronto, nossos equipamentos oferecem a vantagem da utilização de conchas para terraplenagem e com rompedores para as demolições.",
+    "paragraphSecond": "As substituições destes implementos (concha e rompedor) são realizadas na própria obra em poucos minutos, com isso conseguimos atender as necessidades de cada cliente.",
+    "paragraphThird": " Demolição é o ato de se destruir de forma deliberada alguma construção a fim de dar outro destino ao espaço antes ocupado por ela, seja qual for sua necessidade de demolição."
+  },
+  "weare": {
+    "title": "Quem somos",
+    "paragraph": "Somos especilialistas quando se fala em Terraplanagem, Demolição e compromisso, desde 2004 trazendo soluções e compromentimento aos nossos clientes, a ideia da terraplanagem surgiu quando notamos que nossas entregas virou um diferencial em relação a prazo e solucões na área da demolição e planiar terrenos de forma caseira, feito um investimento para aquisição de maquinas especiliazadas e profissionais nos tornamos a ALE Terraplanagem, desde então nosso compromentimento é fazer a sua obra ser a melhor."
+  },
+  "contact": {
+    "title": "Entre em contato agora mesmo!",
+    "paragraph": "Acesse nosso canal de atendimento abaixo e receba as informações que precisa. Teremos prazer em atender você!",
+    "paragraphSecond": "Atendimento de segunda á sábado",
+    "paragraphThird": "das 08h00 ás 17h30",
+    "textCallToAction": "Solicitar orçamento!",
+    "urlCTA": "https://api.whatsapp.com/send?phone=5511948311633&text=Ol%C3%A1%20Ale%20Terraplanagem%2C%20vi%20seu%20site%20e%20gostaria%20de%20ter%20maiores%20informa%C3%A7%C3%B5es."
+  }
+}

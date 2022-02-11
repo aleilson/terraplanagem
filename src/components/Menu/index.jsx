@@ -4,7 +4,7 @@ import { AiOutlineWhatsApp, AiOutlineMenu } from "react-icons/ai";
 import './styles.scss'
 
 
-export function Menu() {
+export function Menu(props) {
     const [headerChange, setHeaderChange] = useState(false);
     const [navbarChange, setNavbarChange] = useState(false);
 
@@ -23,32 +23,33 @@ export function Menu() {
         >
             <div className="container">
                 <h1 className="logo">
-                    ALE
-                    <span>Terraplanagem</span>
+                    {props.title}
+                    <span>{props.subtitle}</span>
                 </h1>
                 <nav 
                     className='menu'
                     style={{ display: `${navbarChange ? 'block' : ''}` }}
                 >
                     <ul className='menu__list'>
-                        <li className='menu__option'>
-                            <a className='menu__option-link' href="#terraplanagemscroll">Terraplanagem</a>
-                        </li>
-                        <li className='menu__option'>
-                            <a className='menu__option-link' href="#wearescroll">Quem somos</a>
-                        </li>
-                        <li className='menu__option'>
-                            <a className='menu__option-link' href="#contactscroll">Contato</a>
-                        </li>
+                        {
+                            props.menuLinks.map(link => (
+                                <li className='menu__option' key={link.title}>
+                                    <a className='menu__option-link' href={`${link.path}`}>{link.title}</a>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </nav>
                 <a 
                     className='whatslink' 
-                    href='https://api.whatsapp.com/send?phone=5511948311633&text=Ol%C3%A1%20Ale%20Terraplanagem%2C%20vi%20seu%20site%20e%20gostaria%20de%20ter%20maiores%20informa%C3%A7%C3%B5es.'
+                    href={props.urlWhats}
                 >
-                    <AiOutlineWhatsApp fontSize={25} /> +55 11 94831-1633
+                    <AiOutlineWhatsApp fontSize={25} /> {props.numberPhone}
                 </a>
-                <button className="menu__mobile" onClick={handleOpenMenu}>
+                <button 
+                    className="menu__mobile" 
+                    onClick={handleOpenMenu}
+                >
                     <AiOutlineMenu fontSize={30} />
                 </button>
             </div>
