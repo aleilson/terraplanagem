@@ -33,7 +33,7 @@ header {
             max-width: 650px;
         }
 
-        @media(max-width: 549px) {
+        @media(max-width: 550px) {
             max-width: 480px;
         }
 
@@ -41,12 +41,12 @@ header {
             max-width: 400px;
         }
 
-        @media(max-width: 389px) {
-            max-width: 360px;
+        @media(max-width: 390px) {
+            max-width: 310px;
         }
 
         @media(max-width: 320px) {
-            max-width: 300px;
+            max-width: 270px;
         }
 
         .logo {
@@ -135,7 +135,7 @@ header {
                 color: var(--gray-700);
             }
 
-            @media(max-width: 380px) {
+            @media(max-width: 390px) {
                 display: none;
             }
         }
