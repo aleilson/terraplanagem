@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiOutlineWhatsApp, AiOutlineMenu } from "react-icons/ai";
 
 import './styles.scss'
@@ -11,12 +11,20 @@ export function Menu() {
     function handleOpenMenu() {
         setHeaderChange(!headerChange) 
         setNavbarChange(!navbarChange)
+
+        if (window.location.hash) {
+            setHeaderChange(!headerChange) 
+            setNavbarChange(!navbarChange)
+        }
     }
 
     return (
         <header 
             id='homescroll' 
-            style={{ height: `${headerChange ? '100%' : ''}` }}
+            style={{ 
+                height: `${headerChange ? '100%' : ''}`, 
+                backgroundColor: `${headerChange ? '#ffca08cc' : ''}` 
+            }}
         >
             <div className="container">
                 <h1 className="logo">
