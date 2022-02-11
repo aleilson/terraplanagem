@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { AiOutlineWhatsApp, AiOutlineMenu } from "react-icons/ai";
 
 import './styles.scss'
