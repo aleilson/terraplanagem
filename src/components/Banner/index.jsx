@@ -4,7 +4,6 @@ import bannerImg from '../../assets/images/banner-2.jpeg'
 
 import './styles.scss'
 
-
 export function Banner() {
     return (
         <section className="banner" id='terraplanagemscroll'>

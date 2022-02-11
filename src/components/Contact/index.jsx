@@ -14,7 +14,7 @@ export function Contact() {
 
                     <div className="contact__box">
                         <AiOutlineWhatsApp fontSize={60} />
-                        <span>Atendimento de segunda-feira á sábado <br /> das 08h00 ás 17h30</span>
+                        <span>Atendimento de segunda á sábado <br /> das 08h00 ás 17h30</span>
                         <a 
                             className='whatslink' 
                             href='https://api.whatsapp.com/send?phone=5511948311633&text=Ol%C3%A1%20Ale%20Terraplanagem%2C%20vi%20seu%20site%20e%20gostaria%20de%20ter%20maiores%20informa%C3%A7%C3%B5es.'
