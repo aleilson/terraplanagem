@@ -11,11 +11,6 @@ export function Menu() {
     function handleOpenMenu() {
         setHeaderChange(!headerChange) 
         setNavbarChange(!navbarChange)
-
-        if (window.location.hash) {
-            setHeaderChange(!headerChange) 
-            setNavbarChange(!navbarChange)
-        }
     }
 
     return (
